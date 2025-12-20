@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "e5f1b087-ed56-4997-9ff8-9a8de1cd9193",
+		"name": "4 Schedule",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49815088"
+	},
+	"item": [
+		{
+			"name": "Run Daily Scheduled Method Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/test-schedule/daily",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"test-schedule",
+						"daily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Run Fetch Events Methods Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/test-schedule/fetch-events",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"test-schedule",
+						"fetch-events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

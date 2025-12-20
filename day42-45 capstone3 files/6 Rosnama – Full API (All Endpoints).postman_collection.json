@@ -1,0 +1,1846 @@
+{
+	"info": {
+		"_postman_id": "c9b93aa1-95e1-4c85-9710-452abd8b7f4d",
+		"name": "6 Rosnama – Full API (All Endpoints)",
+		"description": "Generated from Rosnama test branch controllers. Names are clean; URLs match controller mappings exactly.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49815088"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get All Admins",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/admin/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"superadmin\",\n  \"password\": \"Admin@1234\",\n  \"phoneNumber\": \"966512345678\",\n  \"email\": \"admin@rosnama.sa\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/admin/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"superadmin_updated\",\n  \"password\": \"Admin@1234\",\n  \"phoneNumber\": \"966512345678\",\n  \"email\": \"admin@rosnama.sa\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/admin/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Admin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/admin/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/category/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Category (Admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Tech & Innovation\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/category/add/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"add",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category (Admin)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Entertainment & Culture\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/category/update/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"update",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category (Admin)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/category/delete/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"delete",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Event Owner",
+			"item": [
+				{
+					"name": "Get All Event Owners",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/event-owner/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"event-owner",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Event Owner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"middlebeast_org\",\n  \"password\": \"Owner@1234\",\n  \"email\": \"info@middlebeast.sa\",\n  \"phone\": \"966598765432\",\n  \"url\": \"https://middlebeast.com\",\n  \"status\": \"Active\",\n  \"balance\": 0.0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/event-owner/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"event-owner",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Event Owner",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"middlebeast_org_updated\",\n  \"password\": \"Owner@1234\",\n  \"email\": \"info@middlebeast.sa\",\n  \"phone\": \"966598765432\",\n  \"url\": \"https://middlebeast.com\",\n  \"status\": \"Active\",\n  \"balance\": 1500.0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/event-owner/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"event-owner",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Event Owner",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/event-owner/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"event-owner",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"ahmed_ali\",\n  \"password\": \"User@1234\",\n  \"age\": 22,\n  \"phoneNumber\": \"966511112222\",\n  \"email\": \"ahmed.ali@gmail.com\",\n  \"balance\": 0.0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"ahmed_ali_updated\",\n  \"password\": \"User@1234\",\n  \"age\": 23,\n  \"phoneNumber\": \"966511112222\",\n  \"email\": \"ahmed.ali@gmail.com\",\n  \"balance\": 50.0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Balance",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/add-balance/1/250.0",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"add-balance",
+								"1",
+								"250.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/user/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "External Event",
+			"item": [
+				{
+					"name": "Get All External Events (Admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/get/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add External Event (Admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Middle Beast Festival\",\n  \"organizationName\": \"MDLBEAST\",\n  \"description\": \"Large music festival in Riyadh with multiple stages and international artists.\",\n  \"city\": \"Riyadh\",\n  \"startDate\": \"2025-12-20\",\n  \"endDate\": \"2025-12-22\",\n  \"startTime\": \"18:00:00\",\n  \"endTime\": \"02:00:00\",\n  \"url\": \"https://mdlbeast.com\",\n  \"type\": \"MeetAndGreets\",\n  \"ownerId\": 1,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"add",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update External Event (Admin)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Middle Beast Festival 2025\",\n  \"organizationName\": \"MDLBEAST\",\n  \"description\": \"Updated: lineup announcement and venue details.\",\n  \"city\": \"Riyadh\",\n  \"startDate\": \"2025-12-20\",\n  \"endDate\": \"2025-12-22\",\n  \"startTime\": \"18:00:00\",\n  \"endTime\": \"02:00:00\",\n  \"url\": \"https://mdlbeast.com\",\n  \"type\": \"MeetAndGreets\",\n  \"ownerId\": 1,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/1/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"1",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete External Event (Admin)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/1/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"1",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request External Event (Owner creates + auto request)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Absher Digital Services Day\",\n  \"organizationName\": \"Government Digital Programs\",\n  \"description\": \"Showcase of digital services and citizen experience workshops.\",\n  \"city\": \"Riyadh\",\n  \"startDate\": \"2025-12-18\",\n  \"endDate\": \"2025-12-18\",\n  \"startTime\": \"09:00:00\",\n  \"endTime\": \"17:00:00\",\n  \"url\": \"https://example.sa/absher-day\",\n  \"type\": \"Conference\",\n  \"ownerId\": 1,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/request-event",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"request-event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update External Event (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Absher Digital Services Day (Updated)\",\n  \"organizationName\": \"Government Digital Programs\",\n  \"description\": \"Updated agenda + speakers.\",\n  \"city\": \"Riyadh\",\n  \"startDate\": \"2025-12-18\",\n  \"endDate\": \"2025-12-18\",\n  \"startTime\": \"09:00:00\",\n  \"endTime\": \"17:00:00\",\n  \"url\": \"https://example.sa/absher-day\",\n  \"type\": \"Conference\",\n  \"ownerId\": 1,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/owner/1/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"owner",
+								"1",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete External Event (Owner)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/owner/1/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"owner",
+								"1",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Upcoming External Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/upcoming",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"upcoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ongoing External Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/ongoing",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"ongoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ongoing External Events Between Dates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/between/2025-12-14/2025-12-31",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"between",
+								"2025-12-14",
+								"2025-12-31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get External Events By Type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/type/Conference",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"type",
+								"Conference"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get External Events By City",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/city/Riyadh",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"city",
+								"Riyadh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ongoing External Events By Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/category/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend External Events Based On Event",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-event/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-event",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend External Events Based On User Attending",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-user-attending/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-user-attending",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend External Events Based On User Likes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-user-likes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-user-likes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "External Event Request",
+			"item": [
+				{
+					"name": "Get External Event Requests (Admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event-request/get/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event-request",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Offer Price For Request (Admin)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event-request/1/offer-for/1/5000.0",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event-request",
+								"1",
+								"offer-for",
+								"1",
+								"5000.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Negotiate (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event-request/negotiates/1/1/4500.0/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event-request",
+								"negotiates",
+								"1",
+								"1",
+								"4500.0",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Offer And Pay (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event-request/accept-pay/1/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event-request",
+								"accept-pay",
+								"1",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Internal Event",
+			"item": [
+				{
+					"name": "Get All Internal Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Internal Event (Owner + Admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Tuwaiq Academy Hackathon\",\n  \"description\": \"48-hour hackathon focused on AI, cloud, and civic tech.\",\n  \"city\": \"Riyadh\",\n  \"location\": \"Tuwaiq Academy, Riyadh\",\n  \"startDate\": \"2025-12-15\",\n  \"endDate\": \"2025-12-16\",\n  \"startTime\": \"10:00:00\",\n  \"endTime\": \"20:00:00\",\n  \"price\": 0.0,\n  \"ownerId\": 1,\n  \"type\": \"Hackathon\",\n  \"dailyCapacity\": 200,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/add/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"add",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Internal Event (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Tuwaiq Academy Hackathon (Updated)\",\n  \"description\": \"Updated tracks + mentors list.\",\n  \"city\": \"Riyadh\",\n  \"location\": \"Tuwaiq Academy, Riyadh\",\n  \"startDate\": \"2025-12-15\",\n  \"endDate\": \"2025-12-16\",\n  \"startTime\": \"10:00:00\",\n  \"endTime\": \"20:00:00\",\n  \"price\": 0.0,\n  \"ownerId\": 1,\n  \"type\": \"Hackathon\",\n  \"dailyCapacity\": 250,\n  \"categoryId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/update/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"update",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Internal Event (Owner)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/delete/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"delete",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Internal Events By Type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/type/Hackathon",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"type",
+								"Hackathon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Internal Events By City",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/city/Riyadh",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"city",
+								"Riyadh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Internal Events Between Dates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/between/2025-12-14/2025-12-31",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"between",
+								"2025-12-14",
+								"2025-12-31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Ongoing Internal Events By Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/get-category/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"get-category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend Internal Events Based On User Attending Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-user-attending/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-user-attending",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend Internal Events Based On User High Rate Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-user-high-rate/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-user-high-rate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend Internal Events Based On Event Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-event/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-event",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AI Summary For Owner (Event Reviews) Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/review-summary/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"review-summary",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AI Summary For User (Event Reviews) Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/review-summary/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"review-summary",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Internal Event Request",
+			"item": [
+				{
+					"name": "Get Internal Event Requests (Admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event-request/get/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event-request",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Offer Price For Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event-request/offer-for/1/2500.0",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event-request",
+								"offer-for",
+								"1",
+								"2500.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Negotiate (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event-request/negotiates/1/1/2000.0",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event-request",
+								"negotiates",
+								"1",
+								"1",
+								"2000.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Offer And Pay (Owner)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event-request/accept-pay/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event-request",
+								"accept-pay",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "Register User To Internal Event (By Date)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 1,\n  \"eventId\": 1,\n  \"date\": \"2025-12-15\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registration/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Use Registration",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registration/use/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"use",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Registrations Of Event In A Day",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registration/get-by-event-date/1/2025-12-15",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"get-by-event-date",
+								"1",
+								"2025-12-15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Registrations By User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/registration/reg-by-user/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"registration",
+								"reg-by-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "Get All Reviews Of Internal Event",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/review/get/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"rating\": 5,\n  \"description\": \"Very organized event, great mentors and useful workshops.\",\n  \"registrationId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/review/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Review",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"rating\": 4,\n  \"description\": \"Updated: great event, but timing could be improved.\",\n  \"registrationId\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/review/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Review",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/review/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification Test",
+			"item": [
+				{
+					"name": "Send Test Notification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/notification/send",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Schedule Testing",
+			"item": [
+				{
+					"name": "Run Daily Scheduled Method",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/test-schedule/daily",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"test-schedule",
+								"daily"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Run Fetch Events Methods",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/test-schedule/fetch-events",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"test-schedule",
+								"fetch-events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}

@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "9123b0ba-312c-4ccc-b697-0822f4e634e7",
+		"name": "3 AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49815088"
+	},
+	"item": [
+		{
+			"name": "External Events",
+			"item": [
+				{
+					"name": "Recommend External Events Based On Event Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-event/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-event",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend External Events Based On User Attending Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-user-attending/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-user-attending",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend External Events Based On User Likes Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/external-event/recommend-user-likes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"external-event",
+								"recommend-user-likes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Internal Events",
+			"item": [
+				{
+					"name": "Recommend Internal Events Based On User Attending",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-user-attending/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-user-attending",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend Internal Events Based On User High Rate",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-user-high-rate/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-user-high-rate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recommend Internal Events Based On Event",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/recommend-event/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"recommend-event",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AI Summary For Owner (Event Reviews)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/review-summary/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"review-summary",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AI Summary For User (Event Reviews)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/internal-event/review-summary/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"internal-event",
+								"review-summary",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

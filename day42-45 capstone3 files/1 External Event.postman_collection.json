@@ -1,0 +1,631 @@
+{
+	"info": {
+		"_postman_id": "1e8ca793-89d5-41c2-8551-e1ed9f483bde",
+		"name": "1 External Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49815088"
+	},
+	"item": [
+		{
+			"name": "Create External Event – Najdi Dance Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الرقص النجدي الثاني 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Red Sea International Film Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان البحر الأحمر السينمائي الدولي 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Jeddah\",\r\n  \"startDate\": \"2025-12-04\",\r\n  \"endDate\": \"2025-12-13\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – King Abdulaziz Camel Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان جائزة الملك عبدالعزيز لمزاين الإبل 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان تراثي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-01\",\r\n  \"endDate\": \"2026-01-03\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 5\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Prince of Hail Equestrian Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان أمير حائل للفروسية 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Winter at Tantora Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان شتاء طنطورة 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Riyadh Theatre Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الرياض للمسرح 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Saudi Culture & Heritage Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الثقافة والتراث السعودي 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Saudi Folk Arts Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الفنون الشعبية السعودية 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Saudi Traditional Music Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الموسيقى التقليدية السعودية 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 3\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Saudi Handicrafts Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الحرف اليدوية السعودية 2025\",\r\n  \"organizationName\": \"KSA Event\",\r\n  \"description\": \"مهرجان ثقافي خارجي\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-12-10\",\r\n  \"endDate\": \"2025-12-14\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – AI & Natural Intelligence Festival Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الذكاء الطبيعي يقود الذكاء الاصطناعي 2025\",\r\n  \"organizationName\": \"Enjoy Saudi\",\r\n  \"description\": \"مهرجان ضمن فعاليات السعودية 2025.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-11-17\",\r\n  \"endDate\": \"2025-12-13\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Snow Wonders Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان عجائب الثلج 2025\",\r\n  \"organizationName\": \"Enjoy Saudi\",\r\n  \"description\": \"مهرجان شتوي ضمن فعاليات السعودية.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-11-09\",\r\n  \"endDate\": \"2025-12-23\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Naseem Alkhobar Festival 2025 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان نسيم الخبر 2025\",\r\n  \"organizationName\": \"Enjoy Saudi\",\r\n  \"description\": \"مهرجان ترفيهي في المنطقة الشرقية.\",\r\n  \"city\": \"Khobar\",\r\n  \"startDate\": \"2025-11-06\",\r\n  \"endDate\": \"2025-12-31\",\r\n  \"startTime\": \"16:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Global Carnival Festiva Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان الكرنفال العالمي 2025\",\r\n  \"organizationName\": \"Enjoy Saudi\",\r\n  \"description\": \"كرنفال عالمي ضمن فعاليات السعودية.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-10-23\",\r\n  \"endDate\": \"2026-04-09\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Red Sea International Film Festival Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان البحر الأحمر السينمائي الدولي 2025\",\r\n  \"organizationName\": \"Red Sea Film Festival\",\r\n  \"description\": \"مهرجان سينمائي دولي في جدة.\",\r\n  \"city\": \"Jeddah\",\r\n  \"startDate\": \"2025-12-04\",\r\n  \"endDate\": \"2025-12-13\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Conference\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Balad Beast Festival 2026 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان بلد بيست 2026\",\r\n  \"organizationName\": \"MDL Beast\",\r\n  \"description\": \"مهرجان موسيقي عالمي.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2026-01-29\",\r\n  \"endDate\": \"2026-01-30\",\r\n  \"startTime\": \"18:00:00\",\r\n  \"endTime\": \"23:59:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Alf Wahed Festival 2026 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"مهرجان ألف وواحد 2026\",\r\n  \"organizationName\": \"Enjoy Saudi\",\r\n  \"description\": \"مهرجان ثقافي وترفيهي.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2026-04-02\",\r\n  \"endDate\": \"2026-04-04\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/saudi-festivals/\",\r\n  \"type\": \"Others\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 7\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Resident Doctors Research Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"هاكثون علوم الطوارئ والسلامة 2025\",\r\n  \"organizationName\": \"Saudi Authority\",\r\n  \"description\": \"هاكثون تقني متخصص في السلامة.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-11-30\",\r\n  \"endDate\": \"2026-02-07\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"22:00:00\",\r\n  \"url\": \"https://ksaevent.com/exhibitions/\",\r\n  \"type\": \"Hackathon\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create External Event – Head & Neck Diseases Symposium Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"برنامج أبحاث الأطباء المقيمين 2025\",\r\n  \"organizationName\": \"Saudi Health\",\r\n  \"description\": \"برنامج بحثي للأطباء المقيمين.\",\r\n  \"city\": \"Riyadh\",\r\n  \"startDate\": \"2025-11-23\",\r\n  \"endDate\": \"2025-12-18\",\r\n  \"startTime\": \"09:00:00\",\r\n  \"endTime\": \"17:00:00\",\r\n  \"url\": \"https://ksaevent.com/exhibitions/\",\r\n  \"type\": \"Conference\",\r\n  \"ownerId\": 1,\r\n  \"categoryId\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/add/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Run Daily Scheduled Method Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/test-schedule/daily",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"test-schedule",
+						"daily"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All External Events (Admin) Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/api/v1/external-event/get/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"external-event",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
